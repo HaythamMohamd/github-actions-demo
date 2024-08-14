@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ls before checkout
-        run: ls
+        run: ls -a
         shell: bash
 
       - name: checkout steps
         uses: actions/checkout@v4
 
       - name: ls after checkout
-        run: ls
+        run: ls -a
         shell: bash
